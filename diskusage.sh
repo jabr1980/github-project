@@ -3,6 +3,7 @@ df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ print $5 " " $1 }' | while r
 do
   echo $output
   usep=$(echo $output | awk '{ print $1}' | cut -d'%' -f1  )
+  cat this 
  
   
 done
